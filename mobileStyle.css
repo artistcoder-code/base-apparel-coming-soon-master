@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+/*------------------MOBILE VERSION NOT FINISHED--I'M STUCKED ON IT------------------*/
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .container {
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
+    }
+
+    .left_box {
+        position: relative;
+     
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    #background_img {
+        display: none;
+    }
+
+    .logo_nav img {
+        margin-top: 50px;
+        margin-left: 173px;
+    }
+
+    /*---------------------WE'RE COMMING SOON TEXT---------------*/
+
+    .large_text {
+        margin-left: 9px;
+        text-transform: uppercase; 
+        text-align: center;
+    }
+
+
+    .large_text h1 {
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 356px;
+        letter-spacing: 9.6px;
+        color: hsl(0, 36%, 70%);
+    }
+    .large_text h2 {
+        font-size: 50px;
+        letter-spacing: 12.6px;
+        font-weight: 600;
+        margin-top: -41px;
+        margin-bottom: -41px;
+        line-height: 1.6;
+        color: hsl(0, 6%, 24%);
+    }
+    .soon {
+        padding-top: 20px;
+        color: hsl(0, 6%, 24%);
+    }
+    
+    /*-------------------Hello fellow shoppers!....TEXT--------------*/
+    
+    .small_text p {
+        text-align: center;
+        margin-left: 29px;
+        margin-right: 5px;
+        padding: 88px;
+        margin-top: -17px;
+        margin-bottom: 85px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        color: hsl(0, 36%, 70%);
+    }
+    
+    /*------------------INPUT FORM-------------------*/
+
+    input {
+        height: 48px;
+        width: 276px;
+        border-radius: 100px;
+        padding: 24px;
+        border: 1px solid hsl(0, 36%, 70%);
+        opacity: 30%;
+        margin-top: 60px;
+        z-index: 2;
+        outline: none;
+      
+    }
+    ::placeholder {
+        color: hsl(0, 36%, 70%);
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    ::placeholder:focus {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .email_form.error input::placeholder {
+        color: hsl(0, 6%, 24%);
+        
+    }
+    
+    input:focus {
+        border: 2px solid hsl(0, 93%, 68%);
+        outline: none;
+        opacity: 50%;
+      
+       
+    }
+    
+    .email_form {
+        margin-left: 158px;
+    }
+    
+    .email_form .error_img {
+        opacity: 0;
+        position: absolute;
+        margin-top: 75px;
+        margin-left: -100px; 
+    }
+    
+    .email_form.error .error_img {
+        opacity: 1;
+    }
+    
+    /*------------------ERROR MESSAGE BELOW INPUT FORM---------------------*/
+    
+    .email_form small {
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-left: 15px;
+        color: hsl(0, 93%, 68%);
+        display: block;
+    }
+    
+    .email_form.error small {
+        opacity: 1;
+    }
+    
+    
+    /*-------------------------BUTTON-----------------*/
+    
+    button{
+        top: 943px;
+        position: absolute;
+        height: 49px;
+        width: 65px;
+        border-radius: 100px;
+        margin-left: 219px;
+        z-index: 1;
+        border: none;
+        opacity: 90%;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 1px 4px 18px hsl(0deg 80% 86%);
+        outline: none;
+        cursor: pointer;
+    }
+    
+    button:active {
+     
+        opacity: 100%;
+    }
+    
+    button:focus {
+       
+        outline: none;
+       
+        background-image: linear-gradient(90deg, hsl(0, 72%, 95%), hsl(0, 80%, 92%));
+        box-shadow: -1px 11px 10px hsl(0deg 30% 90%);
+        
+    }
+    
+    /*-----------GIRL PHOTO-----------------*/
+   
+    .right_box {
+        position: absolute;
+        width: 375px;
+        height: 250px;
+        margin-top: -576px;
+        background-image: url("images/hero-mobile.jpg");
+    }
+    
+}
